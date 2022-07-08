@@ -1,4 +1,5 @@
-# The Digital Metrology Ontology
+# The Historical Metrology Ontology Design pattern
 
-This repository contains material around the Digital Metrology Ontology
-which has been created in the Digital Noback project.
+This repository contains material created in the Digital Noback project including
+HM, the Historical Metrology ontology, the eponymous ontology design pattern extracted
+from the ontology as well as documentation on the ontology and the pattern.
