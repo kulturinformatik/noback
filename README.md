@@ -20,7 +20,7 @@ the other three that creates the intended abstraction. To put it in a simplified
 and *Transformation* capture the historical aspects of measurement, *Unit* and *Conversion* 
 the physical aspects.
 
-The components Decomposition and Aggregation have a supporting function. They serve to
+The components *Decomposition* and *Aggregation* have a supporting function. They serve to
 describe the decomposition of units into subunits and the aggregation of units to superunits
 as operations that are distinct from unit conversions.
 
