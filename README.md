@@ -1,8 +1,7 @@
-# The Historical Metrology Ontology Design pattern
+# The Historical Metrology ontology design pattern
 
-This repository contains material created in the Digital Noback project including
-HM, the Historical Metrology ontology, the eponymous ontology design pattern extracted
-from the ontology as well as documentation on the ontology and the pattern.
+This repository contains material on the Historical Metrology ontology 
+design pattern created in the Digital Noback project.
 
 ## ODP schema diagram
 
