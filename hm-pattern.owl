@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#"
+     xml:base="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm"
+     xmlns:hm="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+    <owl:Ontology rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm">
+        <owl:imports rdf:resource="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl"/>
+        <cpannotationschema:coversRequirements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Competency questions:
+
+1. Was there a measurement practice using the unit “guz” in Arungabad in 1850 according to source 𝑆?
+
+2. Which places have “Schiffspfund” as a measurement unit at some time period according at least one source 𝑆?
+
+3. Do the sources 𝑆1 and 𝑆2 agree on the conversion factors between the different “guz” units used on the Indian subcontinent?
+
+4. For which places in the Kingdom of Bavaria does source 𝑆 report the largest (smallest) number of persisting traditional measurement
+practices?
+
+5. For which places in the Kingdom of Bavaria does source 𝑆 report measurement practices that are connected by simple unit conversions?
+
+6. Which types of measurement practices on the Indian subcontinent in 1850 have been redefined and bound to the metrological system of a colonial power?</cpannotationschema:coversRequirements>
+        <cpannotationschema:extractedFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/noback"/>
+        <cpannotationschema:hasConsequences rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ODP permits to describe historical measurement practices. It goes beyond the modeling of units and conversions found in ontologies for scientific metrology.</cpannotationschema:hasConsequences>
+        <cpannotationschema:hasIntent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Historical Metrology ODP intends to model the practices of measurement as well as the transformation of those practices. It links the practices to units and to conversions between units.</cpannotationschema:hasIntent>
+        <cpannotationschema:scenarios rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1. Deprecated measures scenario: Analyze the metrological history of a geopolitical entity (e.g. a kingdom) and identify those dependent entities (e.g. cities) where traditional measurement practices persist despite legislation introducing new practices.
+
+2. Colonial measures scenario: Find evidence in the metrological history of nations subject to colonial rule for policies by which the colonizing power imposed measurement practices (e.g. redefining a local unit in terms of the colonizers etalon).</cpannotationschema:scenarios>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregatesUnit -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregatesUnit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects an aggregation to the unit it aggegates.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aggregates unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#appliesTo -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#appliesTo">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a measurement practice its field of application, e.g., length measurement in the trade of wool.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">applies to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decomposesUnit -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decomposesUnit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a decomposition to the unit it decomposes.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decomposes unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#describedAs -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#describedAs">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a measurement practice with a descriptor that identifies a geographic place or a base unit. A practice may be described by more than one descriptor.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">described as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#followsConvention -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#followsConvention">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a measurement practice to a convention, e.g. allowances for length measurments. A practice may follow more than one convention.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">follows convention</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#fromPractice -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#fromPractice">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a transformation to a source measurement practice it transforms from. A transformation may transform from more than one practice.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from practice</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#fromUnit -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#fromUnit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a conversion to the source unit it converts from.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">from unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#hasBaseUnit -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#hasBaseUnit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a measurement practice to its unique base unit.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has base unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#reportsAbout -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#reportsAbout">
+        <rdfs:domain rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a historical source to an object it reports about. The object typically is a practice, a transformation or a conversion.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reports about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#subUnit -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#subUnit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a decomposition to the resulting unit, i.e. the subunit created by the decomposition.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subunit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#superUnit -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#superUnit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects an aggegation to the resulting unit, i.e., the superunit created by the aggregation.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superunit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#toPractice -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#toPractice">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a transformation to a target measurement practice it transforms to. A transformation may transform to more than one practice.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to practice</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#toUnit -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#toUnit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a conversion to the target unit it converts to.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#usesAggregation -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#usesAggregation">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a measurement practice to an aggregation it uses.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses aggregation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#usesDecompostion -->
+
+    <owl:ObjectProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#usesDecompostion">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Connects a measurement practice to a decomposition it uses.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses decomposition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregNoOfUnits -->
+
+    <owl:DatatypeProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregNoOfUnits">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of units that fit into the superunit.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number of units aggregated</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decompNoOfUnits -->
+
+    <owl:DatatypeProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decompNoOfUnits">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The number of subunits that fit into the unit.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">number of decomposed units</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#factor -->
+
+    <owl:DatatypeProperty rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#factor">
+        <rdfs:domain rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Conversion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The conversion factor.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has factor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Aggregation -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Aggregation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregatesUnit"/>
+                <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#superUnit"/>
+                <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregatesUnit"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#superUnit"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregatesUnit"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#superUnit"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregNoOfUnits"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregNoOfUnits"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Application"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Convention"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Conversion"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An aggregation takes an integer number of units to form a superunit. Example: 6 Fuss = 1 Ruthe.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aggregation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Application -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Application">
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Convention"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Conversion"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An application field in which a measurement practice was applied. Example: length measurement in the trade of wool.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Convention -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Convention">
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Conversion"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A local convention about a measurement practice. Example: an allowance applied when measuring the length of wool fabric.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Convention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Conversion -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Conversion">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#fromUnit"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#toUnit"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conversion between two units. The conversion is defined by the source unit, the target unit and a conversion factor.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conversion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decomposesUnit"/>
+                <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decomposesUnit"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#subUnit"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decomposesUnit"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#subUnit"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decompNoOfUnits"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decompNoOfUnits"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A decomposition decomposes a unit into an integer number of subunits. Example: 1 Fuss = 12 Zoll.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decomposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description">
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A description in natural-language that has been used historically to refer to a measurment practice. Typical descriptors are unit names or place names. Example: A descriptor for the length unit "Fuss" and a descriptor for the place "Regensburg" are used to characterize the practice.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#describedAs"/>
+                <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#hasBaseUnit"/>
+                <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#appliesTo"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Application"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#describedAs"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#followsConvention"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Convention"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#hasBaseUnit"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#usesAggregation"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Aggregation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#usesDecompostion"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement practice as studied by historical metrology. Practices may be specific to a domain and vary across places. A practice has a unique base unit. In addition, it may have aggregations and/or decompositions which create superunits and/or subunits.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Practice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#HistoricalSource">
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A historical source. Sources make assertions about practices, transformations or conversions.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Historical Source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#fromPractice"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#toPractice"/>
+                <owl:allValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transformation describes historical change by relating a source measurement practice to a target measurement practice.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit -->
+
+    <owl:Class rdf:about="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A unit used by one or more measurement practices. </rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregatesUnit"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Aggregation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#appliesTo"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Application"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decomposesUnit"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#describedAs"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Description"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#followsConvention"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Convention"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#fromPractice"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#fromUnit"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Conversion"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#hasBaseUnit"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#subUnit"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#superUnit"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Aggregation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#toPractice"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Transformation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#toUnit"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Unit"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Conversion"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#usesAggregation"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Aggregation"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#usesDecompostion"/>
+        <owl:someValuesFrom rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Practice"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#aggregNoOfUnits"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Aggregation"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#decompNoOfUnits"/>
+        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:subClassOf rdf:resource="http://noback.kinf.wiai.uni-bamberg.de/ontologies/hm#Decomposition"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
