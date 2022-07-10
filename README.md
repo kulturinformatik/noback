@@ -55,7 +55,7 @@ in the level of adoption of measurement practices between places of trade.
 
 A historical practice of measurement is characterized by its *BaseUnit*. A metrological source has to provide at least this piece of information to be considered a witness for the measurement practice (existential axiom). In most cases, the property is also functional. Specializations of the pattern can add a functionality axiom if needed.
 
-Sources refer to measurement practices by means of a *Descriptor* or a combination of descriptors. When a source identifies a practice as the one that measures in "guz" from "Bangalore", it uses a unit descriptor together with a place descriptor. The *Domain* of a practice specifies a field of application, such as measuring lengths in the trade of cut goods or, being more specific, in the trade of woolen cloth. The component is left unmodeled. It could refer to an ontology of historical craft and trade activities. For many practices, sources attest a local *Convention*, e.g. allowances.
+Sources refer to measurement practices by means of a *Descriptor* or a combination of descriptors. When a source identifies a practice as the one that measures in "guz" from "Bangalore", it uses a unit descriptor together with a place descriptor. The *Application* of a practice specifies a field of application, such as measuring lengths in the trade of cut goods or, being more specific, in the trade of woolen cloth. The component is left unmodeled. It could refer to an ontology of historical craft and trade activities. For many practices, sources attest a local *Convention*, e.g. allowances.
 
 ### Decomposition, Aggregation
 
