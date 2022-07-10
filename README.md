@@ -26,7 +26,7 @@ as operations that are distinct from unit conversions.
 
 ## ODP schema diagram
 
-![Historical Metrology ODP schema diagram](https://github.com/kulturinformatik/noback/blob/main/HistoricalMetrologyPatternSchema.png?raw=true
+![Historical Metrology ODP schema diagram](https://github.com/kulturinformatik/noback/blob/main/HistoricalMetrologyPatternSchema.png?raw=true)
 
 ## Use case scenario: deprecated measures
 
