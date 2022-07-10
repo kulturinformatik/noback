@@ -36,6 +36,8 @@ A historian studies a geopolitical entity, e.g. the Kingdom of Bavaria around 18
 
 ## Selected competency questions
 
+| --- | --- |
+
 | CQ1 | Was there a measurement practice using the unit "guz" in Arungabad in 1850 according to source *S*? |
 
 | CQ2 | Which places have "Schiffspfund" as a measurement unit at some time period according at least one source *S*? |
