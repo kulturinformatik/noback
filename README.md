@@ -26,17 +26,20 @@ as operations that are distinct from unit conversions.
 
 ## ODP schema diagram
 
-In the schema diagram, the yellow boxes show the classes. The blue dashed boxes are "hooks" to potentially more complex modeling. These boxes denote classes with external dependencies on the ontology in which the pattern is used. Blue (green) edges denote object (data type) properties.
+In the schema diagram, the yellow boxes show the classes. The blue dashed boxes are "hooks" 
+to potentially more complex modeling. These boxes denote classes with external dependencies 
+on the ontology in which the pattern is used. Blue (green) edges denote object (datatype) properties.
 
 ![Historical Metrology ODP schema diagram](https://github.com/kulturinformatik/noback/blob/main/HistoricalMetrologyPatternSchema.png?raw=true)
 
 ## Use case scenario: deprecated measures
 
-The scenario illustrates the type of research problems addressed by scholars in historical 
+The scenario illustrates a typical research problem addressed in historical 
 metrology. A historian studies a geopolitical entity, e.g. the Kingdom of Bavaria around 1850, 
 and tries to identify those dependent entities (cities or territories) where deprecated units 
 of measurement are still in use. The scholar wants to learn whether there exist differences 
-in the level of adoption of measurement practices between places of trade.
+in the level of adoption of measurement practices between places of trade within the 
+geopolitical entity.
 
 ## Selected competency questions
 
